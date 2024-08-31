@@ -13,3 +13,5 @@ This project is a Retrieval-Augmented Generation (RAG) chatbot that leverages Op
    ```sh
    git clone https://github.com/hymvp/my_opensearch_rag_chatbot.git
    cd opensearch-rag-chatbot
+   python -m app.indexing
+   python mail.py

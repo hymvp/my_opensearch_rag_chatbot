@@ -1,3 +1,4 @@
 opensearch-py
 transformers
 Flask
+cohere
