@@ -1,5 +1,3 @@
-<!-- templates/index.html -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +8,7 @@
 <body>
     <h1>Chat with the Bot</h1>
     <form id="chat-form">
-        <input type="text" id="message" placeholder="Enter your message here...">
+        <input type="text" id="message" placeholder="Enter your message here..." required>
         <button type="submit">Send</button>
     </form>
     <div id="response"></div>
@@ -28,6 +26,7 @@
             });
             const data = await response.json();
             document.getElementById('response').textContent = data.response;
+            document.getElementById('message').value = ''; // 清空输入框
         };
     </script>
 </body>
