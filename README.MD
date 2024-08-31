@@ -11,5 +11,5 @@ This project is a Retrieval-Augmented Generation (RAG) chatbot that leverages Op
 
 1. Clone this repository:
    ```sh
-   git clone https://github.com/your-repo/opensearch-rag-chatbot.git
+   git clone https://github.com/hymvp/my_opensearch_rag_chatbot.git
    cd opensearch-rag-chatbot
