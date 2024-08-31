@@ -1,7 +1,6 @@
-# app/chat.py
-
 from opensearchpy import OpenSearch
 from transformers import pipeline
+import os
 
 # OpenSearch 客户端配置
 client = OpenSearch(
@@ -13,8 +12,12 @@ client = OpenSearch(
     ssl_show_warn=False,
 )
 
-# LLM 模型配置
-generator = pipeline('text-generation', model='gpt-2')  # 你可以替换为其他模型
+# 获取当前文件所在目录的上一级目录
+base_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+model_path = os.path.join(base_path, 'gpt2')
+
+# LLM 模型配置，从本地目录加载模型
+generator = pipeline('text-generation', model=model_path)
 
 def search_and_generate(query):
     # 在 OpenSearch 中检索相关文档
