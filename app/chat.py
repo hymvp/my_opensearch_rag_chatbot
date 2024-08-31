@@ -6,8 +6,8 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 
 # OpenSearch 客户端配置
 client = OpenSearch(
-    hosts=[{'host': 'localhost', 'port': 9200}],
-    http_auth=('username', 'password'),
+    hosts=[{'host': 'amaaaaaaak7gbrianb7fygags7cumwx6qfkd5z6ljuftaghnw3ee6ievxtuq.opensearch.us-ashburn-1.oci.oraclecloud.com', 'port': 9200}],
+    http_auth=('hanyong', 'Hanyong0618@'),
     use_ssl=True,
     verify_certs=False,
     ssl_assert_hostname=False,

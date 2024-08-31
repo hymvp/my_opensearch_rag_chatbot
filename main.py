@@ -1,4 +1,4 @@
-# app.py
+# main.py
 
 from flask import Flask, request, jsonify
 from app.chat import search_and_generate
